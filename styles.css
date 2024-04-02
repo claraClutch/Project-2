@@ -1,5 +1,35 @@
 @charset "utf-8";
 
+/*Styled Nav*/
+nav, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 /* Grid Template*/
 
 body {
@@ -9,6 +39,7 @@ body {
                          "main main"
                          "footer footer"
    }
+
 
 body > header {
     grid-row: 1;
@@ -43,7 +74,39 @@ nav ul li {
 }
 
 footer {
-    background-color: tomato;
+    background-color: rgb(115, 20, 179);
     text-align: center;
 }
-  
+
+/*Contact Form*/
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+   }
+
+   div.formRow > * {
+    flex: 1 1 150px;
+   }
+
+   form#intake {
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   form#intake > fieldset {
+    background-color: rgb(241, 232, 181);
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+   }
+
+   legend {
+    background-color: rgb(115, 20, 179);
+    color: white;
+    padding: 5px;
+   }
+
+   
